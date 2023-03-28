@@ -1,43 +1,86 @@
-/* import React from 'react';
+/*
+import React from "react";
 
 function Navbar() {
   return (
     <nav>
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Noticias</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li>
+          <a href="/">Inicio</a>
+        </li>
+        <li>
+          <a href="/geeks">Geeks</a>
+        </li>
+        <li>
+          <a href="/acerca-de">Acerca de</a>
+        </li>
+        <li>
+          <a href="/actividades">Actividades</a>
+        </li>
+        <li>
+          <a href="/news">News</a>
+        </li>
+        <li>
+          <a href="/eventos">Eventos</a>
+        </li>
+        <li>
+          <a href="/faqs">FAQs</a>
+        </li>
+        <li>
+          <a href="/ingresar">Ingresar</a>
+        </li>
       </ul>
     </nav>
-    
   );
 }
 
 export default Navbar;
 */
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+/*
+  const [isOpen, setIsOpen] = useState(false);
 
-const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const handleMenuClick = () => {
-    setIsMenuOpen(!isMenuOpen);
+  const toggleNav = () => setIsOpen(!isOpen);
+*/
+function Navbar() {
+  const [isActive, setIsActive] = useState(false);
+  const toggleMenu = () => {
+    setIsActive(!isActive);
   };
 
   return (
-    <>
-      <input type="checkbox" id="menu" className="switch-input" checked={isMenuOpen} onChange={handleMenuClick} />
-      <ul id="menu_1" className={`topmenu_1 ${isMenuOpen ? 'open' : ''}`}>
-        <li className="switch"><label onClick={handleMenuClick} htmlFor="menu"></label></li>
-        <li className="topmenu_1"><a href="#index.html">Inicio</a></li>
-        <li className="topmenu_1"><a href="#index.html">Vinculo 2</a></li>
-        <li className="topmenu_1"><a href="#index.html">Vinculo 3</a></li>
-        <li className="topmenu_1"><a href="#index.html">Contacto</a></li>
+    <nav className="navbar">
+      <ul className={isActive ? 'active' : null}>
+        <li>
+          <a href="/">Inicio</a>
+        </li>
+        <li>
+          <a href="/geeks">Geeks</a>
+        </li>
+        <li>
+          <a href="/about">Acerca de</a>
+        </li>
+        <li>
+          <a href="/actividades">Actividades</a>
+        </li>
+        <li>
+          <a href="/news">News</a>
+        </li>
+        <li>
+          <a href="/eventos">Eventos</a>
+        </li>
+        <li>
+          <a href="/faqs">FAQs</a>
+        </li>
+        <li>
+          <a href="/signin">Ingresar</a>
+        </li>
       </ul>
-      <hr />
-    </>
+      <div className="menu-icon" onClick={toggleMenu}>
+        <i className="fa fa-bars"></i>
+      </div>
+    </nav>
   );
-};
+}
 
 export default Navbar;
