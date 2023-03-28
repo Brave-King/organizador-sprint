@@ -1,0 +1,39 @@
+  [
+    {
+      "id": 1,
+      "name": "Linus Torvalds",
+      "description": "Creador del sistema operativo Linux.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Linus_Torvalds_201904_%28cropped%29.jpg/220px-Linus_Torvalds_201904_%28cropped%29.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Steve Jobs",
+      "description": "Cofundador de Apple y desarrollador del primer Macintosh.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Steve_Jobs_Headshot_2010-CROP.jpg/220px-Steve_Jobs_Headshot_2010-CROP.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ada Lovelace",
+      "description": "Pionera en el desarrollo de la computación y autora del primer algoritmo destinado a ser procesado por una máquina.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/220px-Ada_Lovelace_portrait.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Bill Gates",
+      "description": "Cofundador de Microsoft y uno de los principales impulsores de la revolución informática.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Bill_Gates_June_2015.jpg/220px-Bill_Gates_June_2015.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Grace Hopper",
+      "description": "Desarrolladora del primer compilador de lenguaje de programación y creadora de COBOL.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Grace_Hopper_and_UNIVAC.jpg/220px-Grace_Hopper_and_UNIVAC.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Mark Zuckerberg",
+      "description": "Cofundador de Facebook y uno de los jóvenes empresarios más exitosos en el campo de la tecnología.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Bill_Gates_June_2015.jpg",
+      "category": "Emprendimiento"
+    }
+  ]  
