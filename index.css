@@ -13,6 +13,7 @@ code {
 }
 
 /* GRID DE NOTICIAS */
+/*
 .news-grid {
   display: flex;
   flex-wrap: wrap;
@@ -34,7 +35,65 @@ code {
   width: 100%;
   height: auto;
   margin: 0 auto;
+}*/
+/* GRID DE NOTICIAS */
+.news-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px -1rem;
 }
+
+.news-item {
+  width: calc(100% / 3 - 2rem);
+  margin: 0 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.news-item:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.news-item img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.news-item-image img {
+  height: 200px;
+}
+.news-item-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.news-item h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.news-item p {
+  margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .news-item {
+    width: calc(100% / 2 - 2rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .news-item {
+    width: calc(100% - 2rem);
+  }
+}
+
 
 /* TERMINA GRID DE NOTICIAS */
 /*  FOOTER */
@@ -362,3 +421,156 @@ code {
 }
 
 */
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.card {
+  width: calc(99% - 10px); /* El -10px es para tener en cuenta el margen entre las tarjetas */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-body p {
+  margin: 5px 0;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    width: calc(50% - 15px); /* El -15px es para tener en cuenta el margen entre las tarjetas */
+    margin-bottom: 20px;
+  }
+}
+
+.btn_actividades {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn_actividades:hover {
+  background-color: #0069d9;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #20232a;
+  color: #fff;
+  padding: 50px 0;
+  font-size: 16px;
+}
+
+footer h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 50px 0;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+footer .col-sm-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+footer .col-md-4 {
+  flex-basis: calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+}
+
+footer .col-md-6 {
+  flex-basis: calc(50% - 20px);
+  max-width: calc(50% - 20px);
+}
+
+@media screen and (max-width: 768px) {
+  footer .col-md-4 {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  footer .col-md-6 {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
