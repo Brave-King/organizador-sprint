@@ -1,0 +1,56 @@
+/* Definir el estilo para el encabezado */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Definir el estilo para los títulos de sección */
+  h2 {
+    font-size: 1.8em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  /* Definir el estilo para el cuerpo del texto */
+  p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Definir el estilo para los enlaces */
+  a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  /* Definir el estilo para las listas */
+  ul, ol {
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+  
+  /* Definir el estilo para los elementos de lista */
+  li {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  /* Definir el estilo para las citas */
+  blockquote {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-left: 5px solid #007bff;
+    background-color: #f8f9fa;
+  }
+  
+  /* Definir el estilo para las imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
