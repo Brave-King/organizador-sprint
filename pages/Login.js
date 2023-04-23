@@ -1,3 +1,4 @@
+/*
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 
@@ -47,9 +48,9 @@ const LoginForm = () => {
         <Form.Label>Password</Form.Label>
         <Form.Control type="password" placeholder="Password" value={password} onChange={handlePasswordChange} required/>
       </Form.Group>
-
+      <hr></hr>
       <Button variant="primary" type="submit">
-        Submit
+        Enviar
       </Button>
     </Form>
   );
@@ -93,7 +94,7 @@ const RegisterForm = () => {
         <Form.Label>Password</Form.Label>
         <Form.Control type="password" placeholder="Password" value={password} onChange={handlePasswordChange} required/>
       </Form.Group>
-
+      <hr></hr>
       <Button variant="primary" type="submit">
         Registrarse
       </Button>
@@ -109,7 +110,7 @@ const LoginRegisterForm = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       {showLogin ? <LoginForm /> : <RegisterForm />}
       <Button variant="link" onClick={toggleForm}>
         {showLogin ? 'No tienes cuenta? Registrate!' : 'Ya te encuentras registrado?'}
@@ -119,3 +120,91 @@ const LoginRegisterForm = () => {
 };
 
 export default LoginRegisterForm;
+*/
+
+import React, { useState } from "react";
+
+const LoginForm = () => {
+  const [formData, setFormData] = useState({
+    username: "",
+    password: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(null);
+
+    try {
+      const response = await fetch(
+        "check-login",
+        {
+          method: "POST",
+          body: JSON.stringify(formData),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (response.ok) {
+        const data = await response.json();
+        if (data.valid) {
+          // Redirigir a la página correspondiente ESTA PAGINA NO SE REALIZARA EN ESTE MOMENTO
+        } else {
+          setError("Usuario o contraseña incorrectos");
+        }
+      } else {
+        setError("Hubo un error en la conexión con el servidor");
+      }
+    } catch (error) {
+      setError("Hubo un error en la conexión con el servidor");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+
+    <div>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="username">Usuario</label>
+          <input
+            type="text"
+            name="username"
+            value={formData.username}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <label htmlFor="password">Contraseña</label>
+          <input
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+          />
+        </div>
+        {loading ? (
+          <div>Cargando...</div>
+        ) : (
+          <button type="submit">Ingresar</button>
+        )}
+        {error && <div>{error}</div>}
+      </form>
+    </div>
+  );
+};
+
+export default LoginForm;

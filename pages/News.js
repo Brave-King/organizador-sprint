@@ -1,69 +1,81 @@
 import React from 'react';
 import NewsItem from './NewsItem';
+import image1 from '../images/ia-videojuegos-001.jpeg';
+import image2 from '../images/Amazon-1.jpg';
+import image3 from '../images/ChatGPT-1.png';
+import image4 from '../images/Lenguajes-4.jpg';
+import image5 from '../images/ChatGPT-2.png';
+import image6 from '../images/adobe-firefly-4.jpeg';
+import image7 from '../images/Twitter-3.png';
+import image8 from '../images/Chat-vs-bard-3.jpg';
+import image9 from '../images/Apple-4.webp';
+
+
+
 
 const news_1 = [
   {
     id: 1,
-    title: 'Apple presenta su último iPhone',
-    link: 'https://geeks.com/noticia1',
-    descripcion: 'La compañía tecnológica Apple presentó hoy su último modelo de iPhone...',
-    imageUrl: 'https://cdn.pixabay.com/photo/2018/09/24/08/31/pixel-cells-3699334_1280.png',
+    title: 'Inteligencia Artificial y su avance en los videojuegos',
+    link: 'Noticia1',
+    descripcion: 'Los videojuegos han contado a lo largo de su historia con grandes avances tecnológicos que principalmente llegan a ser notorios en el aspecto visual...',
+    imageUrl: image1,
   },
   {
     id: 2,
-    title: 'Descubren nueva especie de animal marino',
-    link: 'https://geeks.com/noticia2',
-    descripcion: 'Científicos del Instituto de Oceanografía descubrieron una nueva especie de animal marino en las profundidades del océano Atlántico.',
-    imageUrl: 'https://cdn.pixabay.com/photo/2022/10/04/14/27/cat-7498364_1280.jpg',
+    title: 'Amazon anuncia un recorte masivo de su personal nuevamente',
+    link: 'Noticia2',
+    descripcion: 'Amazon recortará 9.000 puestos de trabajo más, según anunció este lunes el CEO de la compañía, Andy Jassy, en un memorando enviado al personal...',
+    imageUrl: image2,
   },
   {
     id: 3,
-    title: 'Noticia 3',
-    link: 'https://geeks.com/noticia3',
-    descripcion: 'Descripcion 3',
-    imageUrl: 'https://cdn.pixabay.com/photo/2022/12/30/17/32/boho-art-7687374_1280.jpg',
+    title: 'ChatGPT',
+    link: 'Noticia3',
+    descripcion: 'ChatGPT: ¿qué es y para qué sirve el chatbot de OpenAI?...',
+    imageUrl: image3,
   },
   {
     id: 4,
-    title: 'Noticia 4',
-    link: 'https://geeks.com/noticia4',
-    descripcion: 'Descripcion 4',
-    imageUrl: 'https://cdn.pixabay.com/photo/2016/09/03/12/06/marvel-1641554_1280.jpg',
+    title: 'Cómo funcionan y cuales son las limitaciones de los Grandes Modelos de Lenguaje',
+    link: 'Noticia4',
+    descripcion: 'Hoy en día, la llamada “Inteligencia Artificial” es algo de lo que se escucha todos los días de manera reciente gracias a los avances que los Grandes Modelos de Lenguaje, o LLM...',
+    imageUrl: image4,
   },
   {
     id: 5,
-    title: 'Noticia 5',
-    link: 'https://geeks.com/noticia5',
-    descripcion: 'Descripcion 5',
-    imageUrl: 'https://cdn.pixabay.com/photo/2017/07/03/18/08/read-2468469_1280.jpg',
+    title: 'Microsoft amplía el acceso a ChatGPT ante los rumores de inversión en OpenAI',
+    link: 'Noticia5',
+    descripcion: 'Microsoft Corp (MSFT.O) dijo el lunes que está ampliando el acceso al software enormemente popular de OpenAI, un startup que está respaldando...',
+    imageUrl: image5,
   },
   {
     id: 6,
-    title: 'Noticia 6',
-    link: 'https://geeks.com/noticia6',
-    descripcion: 'Descripcion 6',
-    imageUrl: 'https://cdn.pixabay.com/photo/2016/09/16/17/17/geek-1674585_1280.jpg',
+    title: 'Adobe Firefly y la popularización de la Inteligencia Artificial',
+    link: 'Noticia6',
+    descripcion: 'En los últimos años la cantidad de avances que se ha realizado en el campo de la llamada “inteligencia artificial” ha mostrado...',
+    imageUrl: image6,
   },
   {
     id: 7,
-    title: 'Noticia 7',
-    link: 'https://geeks.com/noticia7',
-    descripcion: 'Descripcion 7',
-    imageUrl: 'https://cdn.pixabay.com/photo/2019/05/07/20/03/gamer-4186905_1280.png',
+    title: 'Elon Musk utiliza Twitter para humillar a un empleado despedido: El tipo no hizo ningún trabajo real',
+    link: 'Noticia7',
+    descripcion: 'Musk mantiene una incómoda entrevista pública de salida con Haraldur Thorleifsson, que no estaba seguro de si había sido despedido o no...',
+    imageUrl: image7,
   },
   {
     id: 8,
-    title: 'Noticia 8',
-    link: 'https://geeks.com/noticia8',
-    descripcion: 'Descripcion 8',
-    imageUrl: 'https://cdn.pixabay.com/photo/2018/08/26/08/16/mario-3631666_1280.png',
+    title: 'Chat GPT vs Bard: Días que han marcado diferencias a favor de Microsoft',
+    link: 'Noticia8',
+    descripcion: 'Desde que chat-GPT fue anunciado este no ha hecho más que ganar popularidad y a su vez hacer que muchos otros servicios AI también ganen atención...',
+    imageUrl: image8,
   },
   {
     id: 9,
-    title: 'Noticia 9',
-    link: 'https://geeks.com/noticia9',
-    descripcion: 'Descripcion 9',
-    imageUrl: 'https://cdn.pixabay.com/photo/2017/08/25/13/36/code-geek-2680204_1280.png',
+    title: 'Hacks y novedades que llegaron con iOS 16.4 y debes conocer',
+    link: 'Noticia9',
+    descripcion: 'Apple suele romperla con cada actualización o nuevo dispositivo y la llegada de iOS 16 no fue la excepción. Pero comno todo en esta vida se puede mejorar...',
+    imageUrl: image9,
   },
 ];
 

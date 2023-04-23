@@ -1,5 +1,8 @@
 import React from 'react';
 //import './Geeks.css';
+import image1 from '../images/Elon_Musk_.jpg';
+import image2 from '../images/Ada_Byron_Lovelace.jpg';
+import image3 from '../images/Cohen-Linus-Torvalds.jpg';
 
 const Geeks = () => {
   const geeks = [
@@ -7,7 +10,7 @@ const Geeks = () => {
       id: 1,
       name: 'Elon Musk',
       title: 'CEO de SpaceX y Tesla',
-      image: 'https://i.imgur.com/Z1xUxAb.jpg',
+      image: image1,
       bio: 'Empresario y magnate sudafricano nacionalizado estadounidense. Fundador de SpaceX, Tesla Inc., Neuralink, The Boring Company y Zip2. También fue cofundador de PayPal.',
       social: {
         twitter: 'elonmusk',
@@ -19,7 +22,7 @@ const Geeks = () => {
       id: 2,
       name: 'Ada Lovelace',
       title: 'Primera programadora de la historia',
-      image: 'https://i.imgur.com/iCLOwbT.jpg',
+      image: image2,
       bio: 'Matemática y escritora británica, conocida por su trabajo sobre la máquina analítica de Charles Babbage. Es considerada la primera persona en escribir un algoritmo destinado a ser procesado por una máquina.',
       social: {
         twitter: 'adalovelace',
@@ -31,7 +34,7 @@ const Geeks = () => {
       id: 3,
       name: 'Linus Torvalds',
       title: 'Creador de Linux',
-      image: 'https://i.imgur.com/KxX9zJC.jpg',
+      image: image3,
       bio: 'Ingeniero de software finlandés-estadounidense, conocido por haber iniciado el desarrollo del kernel Linux. También ha creado el sistema de control de versiones Git y ha contribuido a otros proyectos de software libre y de código abierto.',
       social: {
         twitter: 'Linus__Torvalds',
@@ -66,6 +69,7 @@ const Geeks = () => {
         </div>
       </div>
     </div>
+   
   );
 }
 
