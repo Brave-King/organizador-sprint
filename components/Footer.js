@@ -22,8 +22,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-sm-12 col-md-4">
-            <h4>Acerca de Nosotros</h4>
-            
+            <h4><a href="/about">Acerca de Nosotros</a></h4>
           </div>
         </div>
         <hr />
@@ -35,9 +34,9 @@ const Footer = () => {
           </div>
           <div className="col-sm-12 col-md-6">
             <ul>
-              <li>Términos y Condiciones</li>
-              <li>Política de Privacidad</li>
-              <li>Política de Cookies</li>
+              <li><a href="terms">Términos y Condiciones</a></li>
+              <li><a href="policy">Política de Privacidad</a></li>
+              <li><a href="PolicyCookies">Política de Cookies</a></li>
             </ul>
           </div>
         </div>
