@@ -42,6 +42,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import { Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
+import ContactForm from './components/Contacto';
 import Home from './pages/Home';
 import Geeks from './pages/Geeks';
 import About from './pages/About';
@@ -51,6 +52,20 @@ import Events from './pages/Events';
 import FAQs from './pages/Faqs';
 import SignIn from './pages/Login';
 import Footer from './components/Footer';
+import Terms from './pages/Terms';
+import Policy from './pages/Policy';
+import PolicyCookies from './pages/PolicyCookies';
+import Noticia1 from './noticias/Nota1';
+import Noticia2 from './noticias/Nota2';
+import Noticia3 from './noticias/Nota3';
+import Noticia4 from './noticias/Nota4';
+import Noticia5 from './noticias/Nota5';
+import Noticia6 from './noticias/Nota6';
+import Noticia7 from './noticias/Nota7';
+import Noticia8 from './noticias/Nota8';
+import Noticia9 from './noticias/Nota9';
+
+
 function App() {
   return (
     <Router>
@@ -66,6 +81,19 @@ function App() {
           <Route path="/eventos" component={Events} />
           <Route path="/faqs" component={FAQs} />
           <Route path="/signin" component={SignIn} />
+          <Route path="/Terms" component={Terms} />
+          <Route path="/Policy" component={Policy} />
+          <Route path="/PolicyCookies" component={PolicyCookies} />
+          <Route path="/Contact" component={ContactForm} />
+          <Route path="/Noticia1" component={Noticia1} />
+          <Route path="/Noticia2" component={Noticia2} />
+          <Route path="/Noticia3" component={Noticia3} />
+          <Route path="/Noticia4" component={Noticia4} />
+          <Route path="/Noticia5" component={Noticia5} />
+          <Route path="/Noticia6" component={Noticia6} />
+          <Route path="/Noticia7" component={Noticia7} />
+          <Route path="/Noticia8" component={Noticia8} />
+          <Route path="/Noticia9" component={Noticia9} />
         </Switch>
         <Footer />
       </div>
