@@ -1,0 +1,40 @@
+/* Estilo para el contenedor de las noticias */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    /*grid-template-columns: repeat(2, 1fr);*/
+    gap: 20px;
+  }
+  
+  /* Estilo para las filas de las noticias */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px; /* Margen negativo para compensar el padding de las columnas */
+  }
+  
+  /* Estilo para las columnas de las noticias */
+  .col {
+    flex-basis: 50%; /* Cada columna ocupa el 50% del ancho del contenedor */
+    padding: 15px; /* Espaciado entre las noticias */
+  }
+  
+  /* Estilo para las Cards de las noticias */
+  .card {
+    margin-bottom: 30px;
+  }
+  
+  /* Estilo para las imágenes de las noticias */
+  .card img {
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Cambiar a una sola columna en pantallas más pequeñas */
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

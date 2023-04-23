@@ -1,0 +1,27 @@
+.news-image {
+    width: 100%;
+    max-height: 400px;
+  }
+  
+  .news-title {
+    margin-top: 20px;
+  }
+  
+  .news-text {
+    margin-top: 10px;
+    text-align: justify;
+  }
+  
+  .other-news-title {
+    margin-top: 20px;
+  }
+  
+  .other-news-link {
+    text-decoration: none;
+    color: #212529;
+  }
+  
+  .list-group-item {
+    border: none;
+  }
+  
