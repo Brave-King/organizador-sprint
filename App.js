@@ -51,6 +51,7 @@ import News from './pages/News';
 import Events from './pages/Events';
 import FAQs from './pages/Faqs';
 import SignIn from './pages/Login';
+import Newsletter from './pages/Newsletter';
 import Footer from './components/Footer';
 import Terms from './pages/Terms';
 import Policy from './pages/Policy';
@@ -81,6 +82,7 @@ function App() {
           <Route path="/eventos" component={Events} />
           <Route path="/faqs" component={FAQs} />
           <Route path="/signin" component={SignIn} />
+          <Route path="/Newsletter" component={Newsletter} />
           <Route path="/Terms" component={Terms} />
           <Route path="/Policy" component={Policy} />
           <Route path="/PolicyCookies" component={PolicyCookies} />
