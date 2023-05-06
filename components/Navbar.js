@@ -76,6 +76,9 @@ function Navbar() {
           <a href="/Contact">Contactanos</a>
         </li>
         <li>
+          <a href="/Newsletter">Newsletter</a>
+        </li>
+        <li>
           <a href="/signin">Ingresar</a>
         </li>
       </ul>
