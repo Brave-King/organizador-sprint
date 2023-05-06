@@ -1,0 +1,59 @@
+.newsletter-form {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .newsletter-form h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .newsletter-form p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  
+  .input-container input {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  .input-container button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .confirmation-message,
+  .unsubscribe-message {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .confirmation-message {
+    color: green;
+  }
+  
+  .unsubscribe-message {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
