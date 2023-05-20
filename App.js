@@ -65,7 +65,7 @@ import Noticia6 from './noticias/Nota6';
 import Noticia7 from './noticias/Nota7';
 import Noticia8 from './noticias/Nota8';
 import Noticia9 from './noticias/Nota9';
-
+import Proyecto from './pages/Proyecto';
 
 function App() {
   return (
@@ -86,6 +86,7 @@ function App() {
           <Route path="/Terms" component={Terms} />
           <Route path="/Policy" component={Policy} />
           <Route path="/PolicyCookies" component={PolicyCookies} />
+          <Route path="/Proyecto" component={Proyecto} />
           <Route path="/Contact" component={ContactForm} />
           <Route path="/Noticia1" component={Noticia1} />
           <Route path="/Noticia2" component={Noticia2} />
